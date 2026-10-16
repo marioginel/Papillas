@@ -1,6 +1,6 @@
 // Guarda la app para que abra rápido y sin conexión.
 // Los datos los sincroniza Firestore por su cuenta (tiene caché offline propia).
-const CACHE = "papillas-v1";
+const CACHE = "papillas-v5";
 const SHELL = ["/", "/index.html", "/config.js", "/manifest.webmanifest", "/icon-192.png", "/icon-512.png", "/apple-touch-icon.png"];
 
 self.addEventListener("install", e => {

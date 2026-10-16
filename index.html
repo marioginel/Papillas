@@ -271,11 +271,11 @@ td.r,th.r{text-align:right}
 <script>
 /* ================= DATOS DE REFERENCIA ================= */
 const CATALOGO = {
-  "Verduras":["Calabacín","Patata","Zanahoria","Judía verde","Boniato","Calabaza","Puerro","Guisantes","Brócoli","Pimiento rojo","Berenjena","Nabo","Coliflor","Champiñón","Tomate","Cebolla","Ajo","Chirivía"],
-  "Frutas":["Plátano","Aguacate","Manzana","Pera","Kiwi","Dátil","Arándanos","Frambuesa","Mango","Melocotón","Fresa","Naranja","Sandía"],
-  "Proteínas":["Pollo","Cerdo","Ternera","Pavo","Cordero lechal","Merluza","Rape","Salmón","Huevo"],
-  "Cereales y legumbres":["Avena","Arroz","Lenteja roja","Garbanzo","Pasta de trigo","Pan","Quinoa"],
-  "Otros":["AOVE","Yogur natural","Queso fresco","Orégano","Perejil","Laurel"]
+  "Verduras":["Calabacín","Patata","Zanahoria","Judía verde","Boniato","Calabaza","Puerro","Guisantes","Brócoli","Pimiento rojo","Berenjena","Nabo","Coliflor","Champiñón","Tomate","Cebolla","Ajo","Chirivía","Alcachofa","Espárrago verde","Hinojo","Pepino","Maíz dulce"],
+  "Frutas":["Plátano","Aguacate","Manzana","Pera","Kiwi","Dátil","Arándanos","Frambuesa","Mango","Melocotón","Fresa","Naranja","Sandía","Ciruela","Albaricoque","Melón","Higo","Uva","Papaya","Mandarina","Cereza"],
+  "Proteínas":["Pollo","Cerdo","Ternera","Pavo","Cordero lechal","Merluza","Rape","Salmón","Huevo","Conejo","Lubina","Dorada","Bacalao fresco","Gallo","Sardina"],
+  "Cereales y legumbres":["Avena","Arroz","Lenteja roja","Garbanzo","Pasta de trigo","Pan","Quinoa","Mijo","Cuscús","Sémola de trigo","Trigo sarraceno","Lenteja pardina","Alubia blanca"],
+  "Otros":["AOVE","Yogur natural","Queso fresco","Tahini (sésamo)","Crema de cacahuete","Almendra molida","Canela","Comino","Cúrcuma","Orégano","Perejil","Laurel","Albahaca"]
 };
 
 const CATS = {desayuno:"Desayuno",comida:"Comida",merienda:"Merienda",cena:"Cena",snacks:"Snacks",mias:"Mías"};
@@ -350,6 +350,42 @@ const RECETAS = [
   pasos:[["Pon el ajo, el calabacín y la patata en el vaso.","4 seg / vel 4"],["Añade el agua.","15 min / 100°C / vel 1"],["Incorpora el pollo troceado.","5 min / 100°C / vel 1"],["Agrega el AOVE y tritura.","1 min / vel 5-10 progresiva"]],
   cong:true,rinde:"3 raciones",notas:["Ajo siempre cocinado; quitar el germen evita gases."]},
 
+ {id:"c17",n:"Conejo con calabacín, zanahoria y arroz",cat:"comida",al:["Conejo","Calabacín","Zanahoria","Arroz","AOVE"],
+  ing:[["Conejo deshuesado (lomo o muslo)",30,"g"],["Calabacín",80,"g"],["Zanahoria",40,"g"],["Arroz redondo",20,"g"],["Agua",220,"g"],["AOVE",5,"g"]],
+  pasos:[["Pon el calabacín y la zanahoria en el vaso.","4 seg / vel 4"],["Añade el agua y el arroz.","16 min / 100°C / vel 1"],["Incorpora el conejo en trocitos, revisando que no quede ningún hueso.","6 min / 100°C / vel 1"],["Añade el AOVE y tritura.","1 min / vel 5-10 progresiva"]],
+  cong:true,rinde:"≈350 g",notas:["Carne muy magra y suave; el conejo tiene huesos finos: pásale los dedos antes de echarlo."]},
+ {id:"c18",n:"Lubina con patata, calabacín e hinojo",cat:"comida",al:["Lubina","Patata","Calabacín","Hinojo","AOVE"],
+  ing:[["Lomo de lubina sin piel ni espinas",30,"g"],["Patata",60,"g"],["Calabacín",60,"g"],["Bulbo de hinojo",30,"g"],["Agua",180,"g"],["AOVE",5,"g"]],
+  pasos:[["Pon la patata, el calabacín y el hinojo en el vaso.","4 seg / vel 4"],["Añade el agua.","15 min / 100°C / vel 1"],["Añade la lubina desmigada, revisando espinas.","5 min / 100°C / vel 1"],["Añade el AOVE y tritura.","1 min / vel 5-10 progresiva"]],
+  cong:true,rinde:"≈300 g",notas:["El hinojo es digestivo y ayuda con los gases; su sabor anisado es suave una vez cocido."]},
+ {id:"c19",n:"Garbanzo, calabaza y comino",cat:"comida",al:["Garbanzo","Calabaza","Patata","Comino","AOVE"],
+  ing:[["Garbanzo cocido de bote, bien enjuagado",40,"g"],["Calabaza pelada",100,"g"],["Patata",30,"g"],["Comino molido",1,"pizca"],["Agua",150,"g"],["AOVE",5,"g"]],
+  pasos:[["Pon la calabaza y la patata en el vaso.","4 seg / vel 4"],["Añade el agua, los garbanzos y el comino.","15 min / 100°C / vel 1"],["Añade el AOVE y tritura muy fino (que no queden pieles).","1 min 30 seg / vel 5-10 progresiva"]],
+  cong:true,rinde:"≈300 g",notas:["Proteína vegetal para un día sin carne ni pescado. Enjuaga bien el bote para quitar la sal.","Legumbre: mejor al mediodía, nunca en la cena (gases). El comino ayuda a digerirla."]},
+ {id:"c20",n:"Bacalao fresco con boniato y puerro",cat:"comida",al:["Bacalao fresco","Boniato","Puerro","AOVE"],
+  ing:[["Bacalao fresco (no salado) sin piel ni espinas",30,"g"],["Boniato",90,"g"],["Puerro (parte blanca)",30,"g"],["Agua",200,"g"],["AOVE",5,"g"]],
+  pasos:[["Pon el boniato y el puerro en el vaso.","4 seg / vel 4"],["Añade el agua.","15 min / 100°C / vel 1"],["Añade el bacalao en trozos.","5 min / 100°C / vel 1"],["Añade el AOVE y tritura.","1 min / vel 5-10 progresiva"]],
+  cong:true,rinde:"≈300 g",notas:["Nunca bacalao en salazón ni desalado: lleva demasiada sal para un bebé."]},
+ {id:"c21",n:"Pollo con alcachofa, patata y zanahoria",cat:"comida",al:["Pollo","Alcachofa","Patata","Zanahoria","AOVE"],
+  ing:[["Pechuga o contramuslo de pollo",30,"g"],["Corazones de alcachofa (frescos o congelados)",50,"g"],["Patata",70,"g"],["Zanahoria",40,"g"],["Agua",200,"g"],["AOVE",5,"g"]],
+  pasos:[["Pon la alcachofa, la patata y la zanahoria en el vaso.","4 seg / vel 4"],["Añade el agua.","18 min / 100°C / vel 1"],["Incorpora el pollo troceado.","5 min / 100°C / vel 1"],["Añade el AOVE y tritura muy fino.","1 min 30 seg / vel 5-10 progresiva"]],
+  cong:true,rinde:"≈330 g",notas:["Usa solo el corazón tierno. Si la notas fibrosa, pásala por un colador fino."]},
+ {id:"c22",n:"Ternera con espárrago verde y patata",cat:"comida",al:["Ternera","Espárrago verde","Patata","Calabacín","AOVE"],
+  ing:[["Ternera magra",30,"g"],["Puntas tiernas de espárrago verde",40,"g"],["Patata",60,"g"],["Calabacín",50,"g"],["Agua",200,"g"],["AOVE",5,"g"]],
+  pasos:[["Pon los espárragos, la patata y el calabacín en el vaso.","4 seg / vel 4"],["Añade el agua.","15 min / 100°C / vel 1"],["Incorpora la ternera en trocitos.","5 min / 100°C / vel 1"],["Añade el AOVE y tritura.","1 min / vel 5-10 progresiva"]],
+  cong:true,rinde:"≈310 g",notas:["Solo las puntas: el tallo es muy fibroso."]},
+ {id:"c23",n:"Dorada con tomate y calabacín",cat:"comida",al:["Dorada","Tomate","Calabacín","Patata","AOVE"],
+  ing:[["Lomo de dorada sin piel ni espinas",30,"g"],["Tomate maduro pelado y sin semillas",60,"g"],["Calabacín",80,"g"],["Patata",40,"g"],["Agua",160,"g"],["AOVE",5,"g"]],
+  pasos:[["Pon el tomate, el calabacín y la patata en el vaso.","4 seg / vel 4"],["Añade el agua.","15 min / 100°C / vel 1"],["Añade la dorada desmigada, revisando espinas.","5 min / 100°C / vel 1"],["Añade el AOVE y tritura.","1 min / vel 5-10 progresiva"]],
+  cong:true,rinde:"≈310 g",notas:["El tomate cocinado es menos ácido que crudo. Poca agua porque suelta mucha."]},
+ {id:"c24",n:"Lenteja pardina con verduras y arroz",cat:"comida",al:["Lenteja pardina","Zanahoria","Calabacín","Arroz","AOVE"],
+  ing:[["Lenteja pardina cocida de bote, enjuagada",40,"g"],["Zanahoria",60,"g"],["Calabacín",60,"g"],["Arroz redondo",15,"g"],["Agua",180,"g"],["AOVE",5,"g"]],
+  pasos:[["Pon la zanahoria y el calabacín en el vaso.","4 seg / vel 4"],["Añade el agua, el arroz y las lentejas. Cestillo en lugar del cubilete.","18 min / 100°C / vel 1"],["Añade el AOVE y tritura muy fino.","1 min 30 seg / vel 5-10 progresiva"],["Si quedan pieles, pásalo por un colador fino.",""]],
+  cong:true,rinde:"≈320 g",notas:["Lenteja + arroz juntos dan una proteína vegetal completa.","Tiene piel, a diferencia de la roja: tritura más tiempo."]},
+ {id:"c25",n:"Pavo con mijo, calabaza y zanahoria",cat:"comida",al:["Pavo","Mijo","Calabaza","Zanahoria","AOVE"],
+  ing:[["Pechuga de pavo",30,"g"],["Mijo lavado",20,"g"],["Calabaza",80,"g"],["Zanahoria",40,"g"],["Agua",220,"g"],["AOVE",5,"g"]],
+  pasos:[["Lava el mijo en un colador fino.",""],["Pon la calabaza y la zanahoria en el vaso.","4 seg / vel 4"],["Añade el agua y el mijo.","18 min / 100°C / vel 1"],["Incorpora el pavo troceado.","5 min / 100°C / vel 1"],["Añade el AOVE y tritura.","1 min / vel 5-10 progresiva"]],
+  cong:true,rinde:"≈350 g",notas:["El mijo es un cereal sin gluten, suave y muy digestivo."]},
  {id:"n1",n:"Crema de calabacín, calabaza y arroz",cat:"cena",al:["Calabacín","Calabaza","Arroz","AOVE"],
   ing:[["Calabacín con piel bien lavado",100,"g"],["Calabaza pelada",60,"g"],["Arroz redondo",20,"g"],["Agua",180,"g"],["AOVE",5,"g"]],
   pasos:[["Pon el calabacín y la calabaza en el vaso.","4 seg / vel 4"],["Añade el agua y el arroz.","18 min / 100°C / vel 1"],["Añade el AOVE en crudo y tritura muy fino.","1 min / vel 5-10 progresiva"]],
@@ -375,6 +411,22 @@ const RECETAS = [
   pasos:[["Pon la calabaza y la patata en el vaso.","4 seg / vel 4"],["Añade el agua.","15 min / 100°C / vel 1"],["Añade la media yema cocida y el AOVE y tritura.","1 min / vel 5-10 progresiva"]],
   cong:false,rinde:"1-2 cenas",notas:["Solo si el huevo ya está introducido y la comida no llevó proteína.","El huevo cocido no congela bien: congela el puré sin yema y añádela al servir."]},
 
+ {id:"n7",n:"Crema de calabaza con mijo",cat:"cena",al:["Calabaza","Patata","Mijo","AOVE"],
+  ing:[["Calabaza pelada",120,"g"],["Patata",30,"g"],["Mijo lavado",15,"g"],["Agua",200,"g"],["AOVE",5,"g"]],
+  pasos:[["Pon la calabaza y la patata en el vaso.","4 seg / vel 4"],["Añade el agua y el mijo.","18 min / 100°C / vel 1"],["Añade el AOVE y tritura.","1 min / vel 5-10 progresiva"]],
+  cong:true,rinde:"≈300 g",notas:["El mijo sacia y no da gases: muy buena opción para la noche."]},
+ {id:"n8",n:"Crema de calabacín con queso fresco",cat:"cena",al:["Calabacín","Patata","Queso fresco","AOVE"],
+  ing:[["Calabacín",120,"g"],["Patata",40,"g"],["Agua",150,"g"],["Queso fresco tipo Burgos (sin sal añadida)",20,"g"],["AOVE",5,"g"]],
+  pasos:[["Pon el calabacín y la patata en el vaso.","4 seg / vel 4"],["Añade el agua.","15 min / 100°C / vel 1"],["Añade el queso fresco y el AOVE y tritura.","1 min / vel 5-10 progresiva"]],
+  cong:false,rinde:"≈280 g",notas:["Lácteo: a partir de los 9 meses. Pruébalo primero a mediodía.","Congela la crema sin queso y añádelo al calentar."]},
+ {id:"n9",n:"Crema de boniato y manzana con canela",cat:"cena",al:["Boniato","Manzana","Canela","AOVE"],
+  ing:[["Boniato",100,"g"],["Manzana pelada",0.5,"ud"],["Canela molida",1,"pizca"],["Agua",150,"g"],["AOVE",5,"g"]],
+  pasos:[["Pon el boniato y la manzana en el vaso.","4 seg / vel 4"],["Añade el agua y la canela.","15 min / 100°C / vel 1"],["Añade el AOVE y tritura.","1 min / vel 5-10 progresiva"]],
+  cong:true,rinde:"≈250 g",notas:["Dulce y reconfortante: buena para días de poco apetito."]},
+ {id:"n10",n:"Crema de verduras con cuscús (textura)",cat:"cena",al:["Calabacín","Zanahoria","Cuscús","AOVE"],
+  ing:[["Calabacín",100,"g"],["Zanahoria",50,"g"],["Agua",180,"g"],["Cuscús",15,"g"],["AOVE",5,"g"]],
+  pasos:[["Pon el calabacín y la zanahoria en el vaso.","4 seg / vel 4"],["Añade el agua.","15 min / 100°C / vel 1"],["Añade el AOVE y tritura fino.","1 min / vel 5-10 progresiva"],["Añade el cuscús y deja que se hidrate sin triturar.","3 min / 90°C / giro inverso / vel cuchara"]],
+  cong:true,rinde:"≈280 g",notas:["Los granitos de cuscús le hacen practicar texturas, clave antes de los 10 meses.","El cuscús es trigo: introduce el gluten primero a mediodía."]},
  {id:"f1",n:"Compota de manzana y pera",cat:"merienda",al:["Manzana","Pera"],
   ing:[["Manzana golden pelada y sin pepitas",1,"ud"],["Pera conferencia pelada y sin pepitas",1,"ud"]],
   pasos:[["Pon la fruta en trozos en el vaso.","4 seg / vel 4"],["Baja los restos con la espátula. No hace falta agua.",""],["Cocina.","8 min / 90°C / vel 1"],["Tritura y deja templar.","30 seg / vel 5-10 progresiva"]],
@@ -396,6 +448,54 @@ const RECETAS = [
   pasos:[["Pon el kiwi y el plátano en el vaso. Sirve al momento.","30 seg / vel 5-8 progresiva"]],
   cong:false,rinde:"1 ración",notas:["Primera vez: 2-3 cucharaditas y mira si sale rojez alrededor de la boca.","No congelar."]},
 
+ {id:"f6",n:"Compota de ciruela y manzana",cat:"merienda",al:["Ciruela","Manzana"],
+  ing:[["Ciruelas maduras peladas y sin hueso",2,"ud"],["Manzana pelada",1,"ud"],["Agua",30,"g"]],
+  pasos:[["Pon la fruta en el vaso.","4 seg / vel 4"],["Añade el agua.","8 min / 90°C / vel 1"],["Tritura.","30 seg / vel 5-10 progresiva"]],
+  cong:true,rinde:"≈250 g",notas:["Es la más eficaz si anda estreñido."]},
+ {id:"f7",n:"Mango con yogur natural",cat:"merienda",al:["Mango","Yogur natural"],
+  ing:[["Mango muy maduro",80,"g"],["Yogur natural sin azúcar",60,"g"]],
+  pasos:[["Pon el mango y el yogur en el vaso y tritura. Sirve al momento.","20 seg / vel 5"]],
+  cong:false,rinde:"1 ración",notas:["Yogur a partir de los 9 meses. Si aún no lo ha tomado, ofrécelo solo antes."]},
+ {id:"f8",n:"Pera, plátano y avena",cat:"merienda",al:["Pera","Plátano","Avena"],
+  ing:[["Pera pelada",1,"ud"],["Harina de avena casera",10,"g"],["Agua",50,"g"],["Plátano maduro",0.5,"ud"]],
+  pasos:[["Pon la pera en el vaso.","4 seg / vel 4"],["Añade el agua y la avena.","8 min / 90°C / vel 1"],["Añade el plátano y tritura.","30 seg / vel 5-10 progresiva"]],
+  cong:true,rinde:"≈250 g",notas:["Más saciante que una compota sola, para las meriendas largas de la guardería."]},
+ {id:"f9",n:"Papaya y plátano",cat:"merienda",al:["Papaya","Plátano"],
+  ing:[["Papaya madura sin semillas",80,"g"],["Plátano maduro",0.5,"ud"]],
+  pasos:[["Pon la fruta en el vaso y tritura. Sirve al momento.","20 seg / vel 5"]],
+  cong:false,rinde:"1 ración",notas:["La papaya es muy digestiva y suave."]},
+ {id:"f10",n:"Compota de higo y manzana",cat:"merienda",al:["Higo","Manzana"],
+  ing:[["Higos maduros pelados",2,"ud"],["Manzana pelada",1,"ud"],["Agua",30,"g"]],
+  pasos:[["Pon la fruta en el vaso.","4 seg / vel 4"],["Añade el agua.","8 min / 90°C / vel 1"],["Tritura hasta que no se noten las semillas.","40 seg / vel 5-10 progresiva"]],
+  cong:true,rinde:"≈220 g",notas:["Muy dulce de forma natural; aprovéchalo en temporada (septiembre-octubre)."]},
+ {id:"f11",n:"Compota de melocotón y pera",cat:"merienda",al:["Melocotón","Pera"],
+  ing:[["Melocotón maduro pelado y sin hueso",1,"ud"],["Pera pelada y sin pepitas",1,"ud"]],
+  pasos:[["Pon la fruta troceada en el vaso.","4 seg / vel 4"],["Baja los restos con la espátula. No hace falta agua.",""],["Cocina.","8 min / 90°C / vel 1"],["Tritura.","30 seg / vel 5-10 progresiva"]],
+  cong:true,rinde:"≈250 g",notas:["Muy suave y dulce: buena primera fruta de hueso."]},
+ {id:"f12",n:"Compota de albaricoque y manzana",cat:"merienda",al:["Albaricoque","Manzana"],
+  ing:[["Albaricoques maduros pelados y sin hueso",3,"ud"],["Manzana pelada y sin pepitas",1,"ud"],["Agua",30,"g"]],
+  pasos:[["Pon la fruta troceada en el vaso.","4 seg / vel 4"],["Añade el agua.","8 min / 90°C / vel 1"],["Tritura.","30 seg / vel 5-10 progresiva"]],
+  cong:true,rinde:"≈250 g",notas:["Algo laxante, como la ciruela: útil si anda estreñido."]},
+ {id:"f13",n:"Melón y plátano",cat:"merienda",al:["Melón","Plátano"],
+  ing:[["Melón maduro sin pepitas",80,"g"],["Plátano maduro",0.5,"ud"]],
+  pasos:[["Pon la fruta en el vaso y tritura. Sirve al momento.","15 seg / vel 5"]],
+  cong:false,rinde:"1 ración",notas:["Fresca y muy hidratante. No congelar: se vuelve aguada."]},
+ {id:"f14",n:"Calabaza, manzana y canela",cat:"merienda",al:["Calabaza","Manzana","Canela"],
+  ing:[["Calabaza pelada",100,"g"],["Manzana pelada y sin pepitas",1,"ud"],["Agua",40,"g"],["Canela molida",1,"pizca"]],
+  pasos:[["Pon la calabaza y la manzana en el vaso.","4 seg / vel 4"],["Añade el agua y la canela.","12 min / 100°C / vel 1"],["Tritura.","30 seg / vel 5-10 progresiva"]],
+  cong:true,rinde:"≈280 g",notas:["Merienda dulce con verdura: le acostumbra a sabores menos azucarados que la fruta sola."]},
+ {id:"f15",n:"Compota de pera con almendra molida",cat:"merienda",al:["Pera","Almendra molida"],
+  ing:[["Peras peladas y sin pepitas",2,"ud"],["Almendra molida (cucharadita)",1,"ud"]],
+  pasos:[["Pon las peras troceadas en el vaso.","4 seg / vel 4"],["Cocina.","8 min / 90°C / vel 1"],["Añade la almendra molida y tritura muy fino.","40 seg / vel 5-10 progresiva"]],
+  cong:true,rinde:"≈250 g",notas:["Frutos secos: alérgeno. La primera vez, solo un par de cucharaditas, a media mañana, y vigila 3 días.","Siempre molida o en crema, nunca en trozos (atragantamiento)."]},
+ {id:"f16",n:"Plátano con crema de cacahuete",cat:"merienda",al:["Plátano","Crema de cacahuete"],
+  ing:[["Plátano maduro",0.5,"ud"],["Crema 100% cacahuete, sin sal ni azúcar (cucharadita)",0.5,"ud"],["Agua templada o su leche",10,"ml"]],
+  pasos:[["Diluye la crema de cacahuete con el agua o la leche hasta que quede fluida.",""],["Chafa el plátano y mézclalo bien con la crema diluida.",""]],
+  cong:false,rinde:"1 ración",notas:["Cacahuete: alérgeno. Introducirlo pronto reduce el riesgo de alergia. La primera vez, ¼ de cucharadita, a media mañana, y vigila 3 días.","Nunca la crema espesa sola a cucharadas: se pega al paladar."]},
+ {id:"f17",n:"Fresa, plátano y avena",cat:"merienda",al:["Fresa","Plátano","Avena"],
+  ing:[["Fresas lavadas y sin rabito",4,"ud"],["Plátano maduro",0.5,"ud"],["Harina de avena casera",5,"g"]],
+  pasos:[["Pon todo en el vaso y tritura. Sirve al momento.","20 seg / vel 5"]],
+  cong:false,rinde:"1 ración",notas:["Las fresas pueden dar rojez alrededor de la boca por contacto: suele ser leve y pasajera, no siempre es alergia. Si aparece por el cuerpo, consúltalo."]},
  {id:"d1",n:"Gachas de avena",cat:"desayuno",al:["Avena","Plátano"],
   ing:[["Harina de avena casera (cucharada sopera colmada)",1,"ud"],["Agua mineral",30,"ml"],["Leche de fórmula preparada y templada",35,"ml"],["Plátano chafado (opcional)",0.5,"ud"]],
   pasos:[["Mezcla la avena con el agua en un cuenco.",""],["Calienta solo la avena con agua en el microondas hasta que espese.","20-30 seg microondas"],["Añade la fórmula templada (nunca al microondas) y remueve hasta que quede semilíquida.",""],["Opcional: mezcla el plátano chafado.",""]],
@@ -409,6 +509,42 @@ const RECETAS = [
   pasos:[["Pon 500 g de agua en el vaso y el huevo en el cestillo.","14 min / Varoma / vel 1"],["Pela el huevo. Pon aguacate y huevo en el vaso.","15 seg / vel 4"],["Baja restos, añade la leche y el AOVE.","10 seg / vel 5"]],
   cong:false,rinde:"1-2 raciones",notas:["La primera vez, solo ¼-½ huevo y vigila 3 días.","No congelar. Nevera máximo 24 h con film pegado a la superficie."]},
 
+ {id:"d4",n:"Gachas de avena con manzana y canela",cat:"desayuno",al:["Avena","Manzana","Canela"],
+  ing:[["Harina de avena casera (cucharada sopera colmada)",1,"ud"],["Agua",30,"ml"],["Leche de fórmula preparada y templada",35,"ml"],["Compota de manzana",1,"cucharada"],["Canela molida",1,"pizca"]],
+  pasos:[["Mezcla la avena con el agua y la canela.",""],["Calienta la avena con agua en el microondas hasta que espese.","20-30 seg microondas"],["Añade la fórmula templada y la compota y remueve.",""]],
+  cong:false,rinde:"1 ración",notas:["Para variar las gachas sin cambiar la base que ya acepta."]},
+ {id:"d5",n:"Crema de arroz con plátano",cat:"desayuno",al:["Arroz","Plátano"],
+  ing:[["Arroz redondo",15,"g"],["Agua",120,"g"],["Leche de fórmula preparada y templada",40,"ml"],["Plátano maduro",0.5,"ud"]],
+  pasos:[["Pulveriza el arroz con el vaso seco.","20 seg / vel 10"],["Añade el agua.","8 min / 90°C / vel 3"],["Deja templar a 40°C, añade la fórmula y el plátano.","20 seg / vel 5"]],
+  cong:false,rinde:"1-2 raciones",notas:["Alternativa sin gluten a la avena. La fórmula nunca por encima de 40°C."]},
+ {id:"d6",n:"Yogur con pera y avena",cat:"desayuno",al:["Yogur natural","Pera","Avena"],
+  ing:[["Yogur natural sin azúcar",80,"g"],["Compota de pera o pera muy madura chafada",40,"g"],["Harina de avena casera",8,"g"]],
+  pasos:[["Mezcla todo en un cuenco y deja reposar 5 minutos para que la avena se hidrate.",""]],
+  cong:false,rinde:"1 ración",notas:["A partir de los 9 meses."]},
+ {id:"d7",n:"Gachas de mijo con pera",cat:"desayuno",al:["Mijo","Pera"],
+  ing:[["Mijo bien lavado",20,"g"],["Pera pelada y sin pepitas",0.5,"ud"],["Agua",150,"g"],["Leche de fórmula preparada (al servir)",40,"ml"]],
+  pasos:[["Lava el mijo en un colador fino con agua fría.",""],["Pon el mijo, la pera y el agua en el vaso.","18 min / 100°C / vel 1"],["Tritura.","30 seg / vel 8"],["Deja templar por debajo de 40°C y añade la fórmula al servir.",""]],
+  cong:false,rinde:"2 desayunos",notas:["Sin gluten y muy digestivo, para alternar con la avena.","La base sin leche aguanta 48 h en la nevera. La fórmula, siempre recién preparada."]},
+ {id:"d8",n:"Gachas de avena con calabaza y canela",cat:"desayuno",al:["Avena","Calabaza","Canela"],
+  ing:[["Calabaza pelada",60,"g"],["Agua",80,"g"],["Harina de avena casera",15,"g"],["Canela molida",1,"pizca"],["Leche de fórmula preparada (al servir)",30,"ml"]],
+  pasos:[["Pon la calabaza y el agua en el vaso.","12 min / 100°C / vel 1"],["Añade la avena y la canela.","3 min / 90°C / vel 2"],["Tritura.","20 seg / vel 8"],["Deja templar y añade la fórmula.",""]],
+  cong:false,rinde:"1-2 desayunos",notas:["Puedes usar calabaza que te sobre de un potito ya cocida: entonces solo los 3 min con la avena."]},
+ {id:"d9",n:"Sémola de trigo con manzana",cat:"desayuno",al:["Sémola de trigo","Manzana"],
+  ing:[["Manzana pelada",0.5,"ud"],["Agua",120,"g"],["Sémola de trigo",15,"g"],["Leche de fórmula preparada (al servir)",30,"ml"]],
+  pasos:[["Pon la manzana en el vaso.","4 seg / vel 4"],["Añade el agua.","6 min / 100°C / vel 1"],["Echa la sémola en lluvia por el bocal con el vaso en marcha.","4 min / 90°C / vel 3"],["Deja templar y añade la fórmula.",""]],
+  cong:false,rinde:"1-2 desayunos",notas:["Lleva gluten. Si todavía no lo ha probado, empieza con la mitad de sémola y vigila 3 días."]},
+ {id:"d10",n:"Quinoa con plátano",cat:"desayuno",al:["Quinoa","Plátano"],
+  ing:[["Quinoa",20,"g"],["Agua",150,"g"],["Plátano maduro",0.5,"ud"],["Leche de fórmula preparada (al servir)",30,"ml"]],
+  pasos:[["Lava muy bien la quinoa frotándola en un colador hasta que el agua no haga espuma.",""],["Pon la quinoa y el agua en el vaso.","15 min / 100°C / vel 1"],["Añade el plátano y tritura muy fino.","40 seg / vel 8"],["Deja templar y añade la fórmula.",""]],
+  cong:false,rinde:"2 desayunos",notas:["Si no lavas bien la quinoa, amarga (saponinas).","Aporta más proteína y hierro que otros cereales."]},
+ {id:"d11",n:"Tiras de pan con aguacate",cat:"desayuno",al:["Pan","Aguacate","AOVE"],
+  ing:[["Pan de barra del día anterior, en tiras de un dedo",2,"tiras"],["Aguacate maduro",0.25,"ud"],["AOVE",null,"unas gotas"]],
+  pasos:[["Chafa el aguacate con unas gotas de AOVE.",""],["Úntalo generosamente sobre las tiras de pan.",""]],
+  cong:false,rinde:"1 desayuno",notas:["Para que practique con las manos. Lleva gluten (trigo).","Puedes alternarlo con el hummus suave de Snacks."]},
+ {id:"d12",n:"Revuelto de huevo con aguacate",cat:"desayuno",al:["Huevo","Aguacate","AOVE"],
+  ing:[["Huevo",1,"ud"],["Aguacate maduro",0.25,"ud"],["AOVE",null,"unas gotas"]],
+  pasos:[["Bate el huevo.",""],["Sartén antiadherente a fuego bajo con unas gotas de AOVE. Remueve hasta que esté completamente cuajado, sin partes líquidas.","3-4 min"],["Chafa el revuelto con el aguacate, o dáselo en trocitos blandos.",""]],
+  cong:false,rinde:"1-2 desayunos",notas:["Solo cuando el huevo ya esté introducido. Si es la primera vez, ¼ de huevo y vigila 3 días.","Huevo siempre bien hecho."]},
  {id:"m1",n:"Bastones de boniato tiernos",cat:"snacks",al:["Boniato","AOVE"],
   ing:[["Boniato",1,"ud"],["AOVE",1,"hilo"]],
   pasos:[["Corta bastones de 1,5-2 cm de grosor y 6-8 cm de largo.",""],["Bandeja con un hilo de AOVE y tapada herméticamente con papel de aluminio, horno a 180 °C.","15-20 min horno 180°C"],["Alternativa: Varoma antes del horno (luego solo 5 min de horno).","8-10 min / Varoma / vel 1"],["Prueba del pellizco: debe chafarse como mantequilla.",""]],
@@ -428,7 +564,27 @@ const RECETAS = [
  {id:"m5",n:"Tortitas horneadas para congelar",cat:"snacks",al:["Huevo","Plátano","Manzana","Arándanos","Avena"],
   ing:[["Huevo",1,"ud"],["Plátano maduro",1,"ud"],["Manzana rallada",0.5,"ud"],["Arándanos o frambuesas",8,"ud"],["Harina de avena (cucharadas soperas)",5,"ud"],["Leche",30,"ml"]],
   pasos:[["Tritura todo en la batidora de vaso.",""],["Porciones alargadas sobre papel de horno.",""],["Hornea hasta que estén firmes.","10-12 min horno 180°C"],["Enfría en rejilla y congela separadas con papel vegetal.",""]],
-  cong:true,rinde:"12-15 tortitas",notas:["Para servir: 30 min fuera o 10 seg de microondas."]}
+  cong:true,rinde:"12-15 tortitas",notas:["Para servir: 30 min fuera o 10 seg de microondas."]},
+ {id:"m6",n:"Tiras de tortilla de calabacín",cat:"snacks",al:["Huevo","Calabacín","AOVE"],
+  ing:[["Huevo (ya probado)",1,"ud"],["Calabacín rallado y escurrido",50,"g"],["AOVE",null,"unas gotas"]],
+  pasos:[["Bate el huevo y mézclalo con el calabacín.",""],["Sartén antiadherente a fuego medio-bajo con unas gotas de AOVE. Cuaja bien por ambos lados.","3-4 min"],["Corta en tiras del tamaño de un dedo.",""]],
+  cong:false,rinde:"4-6 tiras",notas:["El huevo siempre bien cuajado. Nevera hasta el día siguiente."]},
+ {id:"m7",n:"Croquetas al horno de merluza y patata",cat:"snacks",al:["Merluza","Patata","AOVE"],
+  ing:[["Merluza cocida y desmigada",40,"g"],["Patata cocida",80,"g"],["AOVE",3,"g"]],
+  pasos:[["Cuece la patata y la merluza en el Varoma (500 g de agua en el vaso).","20 min / Varoma / vel 1"],["Chafa la patata con la merluza y el AOVE, revisando espinas.",""],["Forma bastones y hornea sobre papel vegetal.","12 min horno 180°C"]],
+  cong:true,rinde:"6-8 croquetas",notas:["Se congelan crudas o hechas; para servir, 10 min de horno."]},
+ {id:"m8",n:"Hummus suave para untar",cat:"snacks",al:["Garbanzo","Tahini (sésamo)","Comino","AOVE"],
+  ing:[["Garbanzo cocido de bote, bien enjuagado",100,"g"],["Tahini (crema de sésamo)",5,"g"],["AOVE",10,"g"],["Agua",30,"g"],["Comino molido",1,"pizca"]],
+  pasos:[["Pon todo en el vaso y tritura hasta que quede muy liso.","40 seg / vel 7"]],
+  cong:true,rinde:"≈140 g",notas:["El sésamo es alérgeno: la primera vez, una cucharadita y vigila 3 días.","Úntalo fino sobre bastones de boniato o tiras de pan."]},
+ {id:"m9",n:"Tiras de pan con tomate",cat:"snacks",al:["Pan","Tomate","AOVE"],
+  ing:[["Pan de barra del día anterior",1,"tira"],["Tomate maduro rallado",1,"cucharada"],["AOVE",1,"hilo"]],
+  pasos:[["Corta una tira larga de la miga con algo de corteza.",""],["Unta el tomate rallado y un hilo de AOVE, sin sal.",""]],
+  cong:false,rinde:"1 ración",notas:["Introduce el gluten (trigo). El pan ligeramente duro se deshace menos de golpe."]},
+ {id:"m10",n:"Tiras de mango rebozadas en avena",cat:"snacks",al:["Mango","Avena"],
+  ing:[["Mango maduro en tiras gruesas",1,"ud"],["Harina de avena casera",1,"cucharada"]],
+  pasos:[["Corta tiras gruesas como un dedo.",""],["Pásalas por la harina de avena para que no resbalen.",""]],
+  cong:false,rinde:"3-4 tiras",notas:["Sin cocinar: el mango maduro se deshace con las encías."]}
 ];
 
 const PLAN = [
@@ -457,6 +613,17 @@ const PLAN = [
    cena:{h:"19:30",sol:"Puré o cena ligera",g:[100,100],bib:[180,210]},
    madrugada:{h:"03:00",sol:null,bib:[120,120],bn:"intentar rebajar"}}}
 ];
+/* Menú fijo de la guardería (Alaria). No sale en el recetario: solo para registrar lo que ha comido allí. */
+const BASE_G=["Patata","Cebolla","Zanahoria"];
+const GUARDE=[
+ {id:"g1",dow:1,n:"Lunes · Puré de verduras con huevo",cat:"comida",guarde:true,al:BASE_G.concat("Huevo")},
+ {id:"g2",dow:2,n:"Martes · Puré de verduras con merluza",cat:"comida",guarde:true,al:BASE_G.concat("Merluza")},
+ {id:"g3",dow:3,n:"Miércoles · Puré de verduras con ternera",cat:"comida",guarde:true,al:BASE_G.concat("Ternera")},
+ {id:"g4",dow:4,n:"Jueves · Puré de verduras con pollo",cat:"comida",guarde:true,al:BASE_G.concat("Pollo")},
+ {id:"g5",dow:5,n:"Viernes · Puré de verduras con ternera",cat:"comida",guarde:true,al:BASE_G.concat("Ternera")},
+ {id:"g6",dow:0,n:"Merienda · Papilla de frutas",cat:"merienda",guarde:true,al:[]},
+ {id:"g7",dow:0,n:"Merienda · Yogur sin azúcar",cat:"merienda",guarde:true,al:["Yogur natural"]}
+];
 /* Raciones orientativas por edad (g de puré ≈ ml) */
 const RACIONES = [
  {hasta:8, lbl:"6-7 meses", desayuno:[30,50], comida:[50,100], merienda:[50,80], cena:[30,50]},
@@ -468,7 +635,8 @@ const RACION_FIJA = {
  d2:"1 cucharada sopera colmada por toma (≈15 g de harina)",
  d3:"40-60 g (empieza con ¼-½ huevo)",
  m1:"3-4 bastones (≈60-80 g)", m2:"2-3 arbolitos (≈40-60 g)", m3:"2-3 palitos (≈40-60 g)",
- m4:"2-3 tortitas (≈40-60 g)", m5:"2 tortitas (≈40 g)"
+ m4:"2-3 tortitas (≈40-60 g)", m5:"2 tortitas (≈40 g)",
+ m6:"2-3 tiras (≈40-60 g)", d11:"1-2 tiras de pan untadas", d12:"½-1 huevo con ¼ de aguacate", m7:"2-3 croquetas (≈50-70 g)", m8:"1-2 cucharaditas untadas", m9:"1 tira de pan", m10:"2-3 tiras (≈50-70 g)"
 };
 function racionPara(r){
   const e=edad(cfg().nacimiento),b=RACIONES.find(x=>e.m<x.hasta)||RACIONES[RACIONES.length-1];
@@ -487,6 +655,7 @@ function rendimiento(r,mult){if(r.mia||!r.ing||RACION_FIJA[r.id])return null;
   return {g:est,n:Math.max(1,Math.floor(est/x.mid))}}
 const MOMENTOS = ["desayuno","comida","merienda","cena","madrugada"];
 const MOM_N = {desayuno:"Desayuno",comida:"Comida",merienda:"Merienda",cena:"Cena",madrugada:"Madrugada",otro:"Otro"};
+const VIA = {chupete:"Con chupete",cuchara:"Con cuchara",manos:"Con las manos"};
 const ACEPT = {bien:["Bien","p-good"],regular:["Regular","p-warn"],rechazo:["Rechazo","p-bad"]};
 const CONS = {normal:["Normal","p-good"],blanda:["Blanda","p-warn"],liquida:["Líquida","p-bad"]};
 
@@ -523,7 +692,7 @@ function fmtQty(q,u,mult){if(q==null)return u||"";const v=q*mult;
 function semanaPlan(k){const i=Math.floor((fromKey(k)-fromKey(cfg().planInicio))/864e5/7);return i}
 function planFor(k){const i=semanaPlan(k);if(i<0)return null;return {i,p:PLAN[Math.min(i,3)],extra:i>3}}
 function allRecetas(){return RECETAS.concat(S.recDb.map(r=>{const t=CAT_OLD[r.tipo]||r.tipo;return {...r,cat:CAT_LIST.includes(t)?t:"comida",mia:true}}))}
-function recById(id){return allRecetas().find(r=>r.id===id)}
+function recById(id){return allRecetas().find(r=>r.id===id)||GUARDE.find(r=>r.id===id)}
 function foodState(n){const a=S.alim[slug(n)];if(!a)return"pendiente";
   if(a.estado==="prueba"&&a.inicio){const d=Math.floor((fromKey(dayKey(new Date()))-fromKey(a.inicio))/864e5);if(d>=3)return"probado?"}
   return a.estado||"pendiente"}
@@ -602,7 +771,7 @@ function renderHoy(){
 function entRow(e){
   let col="var(--faint)",ttl="",sub=[],rt="";
   if(e.tipo==="biberon"){col="var(--milk)";ttl=`Biberón <span class="num">${+e.ml||0} ml</span>`;}
-  if(e.tipo==="solido"){col="var(--solid)";const r=e.recetaId&&recById(e.recetaId);ttl=esc(e.desc||(r&&r.n)||"Sólido");if(e.g)sub.push(`<span class="num">${e.g} g</span>`);
+  if(e.tipo==="solido"){col="var(--solid)";const r=e.recetaId&&recById(e.recetaId);ttl=esc(e.desc||(r&&r.n)||"Sólido");if(e.g)sub.push(`<span class="num">${e.g} g</span>`);if(e.via&&VIA[e.via])sub.push(VIA[e.via].toLowerCase());
     if(e.acept&&ACEPT[e.acept])rt=`<span class="pill ${ACEPT[e.acept][1]}">${ACEPT[e.acept][0]}</span>`}
   if(e.tipo==="deposicion"){col="var(--poop)";ttl="Deposición";if(e.cons&&CONS[e.cons])rt=`<span class="pill ${CONS[e.cons][1]}">${CONS[e.cons][0]}</span>`}
   sub.unshift(MOM_N[e.momento]||"");
@@ -754,7 +923,7 @@ function openReg(entry,preset){
   const now=new Date();let ts;
   if(entry)ts=entry.ts;else{const today=dayKey(now);if(S.day!==today){const d=fromKey(S.day);d.setHours(now.getHours(),now.getMinutes());ts=d.getTime()}else ts=now.getTime()}
   const e=Object.assign({tipo:"biberon",ml:"",g:"",momento:momentoAuto(ts),acept:"bien",cons:"normal",notas:"",recetaId:"",desc:""},entry||{},preset||{});
-  const lastMl=lsGet("ultMl",180);
+  const lastMl=lsGet("ultMl",180);let via=e.via||lsGet("ultVia","chupete");
   if(!ed&&e.tipo==="biberon"&&!e.ml)e.ml=lastMl;
   const recs=allRecetas();
   const pend=Object.values(CATALOGO).flat().filter(n=>foodState(n)==="pendiente");
@@ -770,11 +939,13 @@ function openReg(entry,preset){
    </div>
    <div data-for="solido" class="form">
     <div class="field"><label for="rgR">Receta</label><select class="inp" id="rgR"><option value="">Otra cosa (escríbela abajo)</option>
+     <optgroup label="Guardería">${(()=>{const dw=new Date(ts).getDay();return GUARDE.map(r=>`<option value="${r.id}" ${e.recetaId===r.id?"selected":""}>${esc(r.n)}${r.dow===dw?" ← hoy":""}</option>`).join("")})()}</optgroup>
      ${CAT_LIST.map(c=>{const rs=recs.filter(r=>r.cat===c);return rs.length?`<optgroup label="${CATS[c]}">${rs.map(r=>`<option value="${esc(r.id)}" ${e.recetaId===r.id?"selected":""}>${esc(r.n)}</option>`).join("")}</optgroup>`:""}).join("")}</select><span class="small" style="color:var(--solid);font-weight:700" id="rgRac"></span></div>
     <div class="field"><label for="rgD">Descripción</label><input class="inp" id="rgD" value="${esc(e.desc)}" placeholder="Ej. palitos de boniato, trozo de plátano"></div>
-    <div class="field"><label for="rgG">Cantidad que se ha comido (g · una cucharada sopera ≈ 15 g)</label>
+    <div class="field"><label for="rgG">Cantidad que se ha comido (g · en purés 1 ml ≈ 1 g · una cucharada sopera ≈ 15 g)</label>
      <div class="step"><button type="button" id="gMinus" aria-label="Quitar una cucharada">−</button><input class="inp num" id="rgG" inputmode="numeric" style="width:90px;text-align:center" value="${esc(e.g)}"><button type="button" id="gPlus" aria-label="Sumar una cucharada">+</button><span class="small muted" id="gCuch"></span></div>
      <div class="chips">${[15,30,50,80,100,120,150].map(v=>`<button type="button" class="chip" data-g="${v}">${v}</button>`).join("")}</div></div>
+    <div class="field"><span class="lab">¿Cómo se lo ha tomado?</span><div class="seg" role="group">${Object.entries(VIA).map(([k,v])=>`<button type="button" data-via="${k}" aria-pressed="${via===k}">${({chupete:"Chupete",cuchara:"Cuchara",manos:"Manos"})[k]}</button>`).join("")}</div></div>
     <div class="field"><span class="lab">¿Cómo lo ha aceptado?</span><div class="seg" role="group">${Object.entries(ACEPT).map(([k,v])=>`<button type="button" data-acept="${k}" aria-pressed="${e.acept===k}">${v[0]}</button>`).join("")}</div></div>
     <label class="check" id="frzWrap" hidden><input type="checkbox" id="rgFrz"> <span id="frzLbl">Sacado del congelador (descuenta una ración)</span></label>
     ${ed?"":`<div class="field"><span class="lab">¿Hoy prueba algo nuevo? (empieza los 3 días de vigilancia)</span><div class="chips" id="rgNew">${pend.slice(0,40).map(n=>`<button type="button" class="chip" data-new="${esc(n)}" aria-pressed="false">${esc(n)}</button>`).join("")}</div></div>`}
@@ -790,7 +961,7 @@ function openReg(entry,preset){
   const showT=()=>{$$("[data-for]").forEach(d=>d.hidden=d.dataset.for!==tipo);$$("[data-tipo]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.tipo===tipo))};
   const cuch=()=>{const g=+$("#rgG").value||0;$("#gCuch").textContent=g?"≈ "+frac(Math.round(g/15*2)/2)+" cucharadas":""};
   const frz=()=>{const id=$("#rgR").value;const ls=S.lotes.filter(l=>l.recetaId===id&&(+l.quedan||0)>0);const w=$("#frzWrap");
-    const rr=id&&recById(id);$("#rgRac").textContent=rr&&racionTxt(rr)?"Ración recomendada: "+racionTxt(rr):"";
+    const rr=id&&recById(id);$("#rgRac").textContent=rr&&racionTxt(rr)?"Ración recomendada: "+racionTxt(rr)+(rr.guarde&&rr.cat==="comida"?" · Lleva patata, cebolla y zanahoria con judía verde, calabaza o calabacín: si te dicen cuál, apúntala en Descripción.":""):"";
     w.hidden=ed||!ls.length;if(ls.length){const q=ls.reduce((a,l)=>a+ +l.quedan,0);$("#frzLbl").textContent=`Sacado del congelador (quedan ${q}, descuenta una)`;$("#rgFrz").checked=true}};
   showT();cuch();frz();
   $("#shClose").onclick=closeSheet;
@@ -802,6 +973,7 @@ function openReg(entry,preset){
   $("#rgG").oninput=cuch;
   $("#rgR").onchange=frz;
   $("#rgTs").onchange=()=>{const t=new Date($("#rgTs").value).getTime();if(t)$("#rgM").value=momentoAuto(t)};
+  $$("[data-via]").forEach(b=>b.onclick=()=>{via=b.dataset.via;$$("[data-via]").forEach(x=>x.setAttribute("aria-pressed",x===b))});
   $$("[data-acept]").forEach(b=>b.onclick=()=>{acept=b.dataset.acept;$$("[data-acept]").forEach(x=>x.setAttribute("aria-pressed",x===b))});
   $$("[data-cons]").forEach(b=>b.onclick=()=>{cons=b.dataset.cons;$$("[data-cons]").forEach(x=>x.setAttribute("aria-pressed",x===b))});
   $$("[data-new]").forEach(b=>b.onclick=()=>{const n=b.dataset.new;nuevos.has(n)?nuevos.delete(n):nuevos.add(n);b.setAttribute("aria-pressed",nuevos.has(n))});
@@ -810,7 +982,7 @@ function openReg(entry,preset){
     const t=new Date($("#rgTs").value).getTime()||Date.now();
     const d={tipo,ts:t,dia:dayKey(new Date(t)),momento:$("#rgM").value,notas:$("#rgN").value.trim(),autor:entry?entry.autor||S.me||null:S.me||null};
     if(tipo==="biberon"){d.ml=parseInt($("#rgMl").value)||0;if(!d.ml)return toast("Indica los ml");lsSet("ultMl",d.ml)}
-    if(tipo==="solido"){d.recetaId=$("#rgR").value||"";d.desc=$("#rgD").value.trim();d.g=parseInt($("#rgG").value)||0;d.acept=acept;
+    if(tipo==="solido"){d.recetaId=$("#rgR").value||"";d.desc=$("#rgD").value.trim();d.g=parseInt($("#rgG").value)||0;d.acept=acept;d.via=via;lsSet("ultVia",via);
       if(!d.recetaId&&!d.desc)return toast("Elige una receta o escribe qué ha comido");}
     if(tipo==="deposicion"){d.cons=cons}
     $("#rgSave").disabled=true;
@@ -896,6 +1068,17 @@ function renderEvol(){
     <div class="stat"><div class="k"><span class="dot d-poop"></span>Deposiciones líquidas</div><div class="v">${liq7}<small>últimos 7 días</small></div></div>
    </div>
    ${trend}
+   ${(()=>{const sol=S.reg.filter(e=>e.tipo==="solido"&&e.dia>=days[0].k&&e.via);if(!sol.length)return"";
+     const c={chupete:0,cuchara:0,manos:0};sol.forEach(e=>{if(c[e.via]!=null)c[e.via]++});
+     const pc=k=>Math.round(c[k]/sol.length*100);
+     const prim=S.reg.filter(e=>e.tipo==="solido"&&e.via==="cuchara").sort((a,b)=>a.ts-b.ts)[0];
+     const half=sol.length>=6?Math.floor(sol.length/2):0;const cu=a=>a.filter(e=>e.via==="cuchara").length/a.length;
+     const tr=half?Math.round((cu(sol.slice(half))-cu(sol.slice(0,half)))*100):0;
+     return `<div class="card"><div class="sec-h"><h2>Cómo come</h2><span class="small muted num">${sol.length} tomas</span></div>
+      <div style="display:flex;height:10px;border-radius:5px;overflow:hidden;gap:2px;margin:10px 0 8px;background:var(--sunk)">
+       ${["chupete","cuchara","manos"].map((k,i)=>c[k]?`<span style="flex:${c[k]};background:${["var(--milk)","var(--accent)","var(--solid)"][i]}"></span>`:"").join("")}</div>
+      <div class="legend"><span><span class="dot d-milk"></span>Chupete ${pc("chupete")}%</span><span><span class="dot" style="background:var(--accent)"></span>Cuchara ${pc("cuchara")}%</span><span><span class="dot d-solid"></span>Manos ${pc("manos")}%</span></div>
+      <div class="small muted" style="margin-top:8px">${prim?`Primera toma con cuchara: ${fmtDay(prim.dia)}.`:"Aún ninguna toma con cuchara registrada."}${half&&tr?` Comparado con la primera mitad del periodo, cuchara ${tr>0?"+":""}${tr} puntos.`:""}</div></div>`})()}
    <div class="card chart"><div class="sec-h"><h2>Leche al día</h2><span class="small muted">ml</span></div><div style="margin-top:8px">${barChart(days,"leche","var(--milk)","ml",[600,700])}</div></div>
    <div class="card chart"><div class="sec-h"><h2>Sólidos al día</h2><span class="small muted">g</span></div><div style="margin-top:8px">${barChart(days,"sol","var(--solid)","g")}</div></div>
    <div class="card chart"><div class="sec-h"><h2>Horarios</h2></div>
@@ -932,7 +1115,10 @@ function renderAlim(){
     <li>Espinacas, acelgas y borraja: no antes de los 12 meses (nitratos).</li>
     <li>Miel y sal: no antes del año.</li>
     <li>Arándanos y uvas enteros: siempre aplastados o triturados.</li>
-    <li>Leche de vaca como bebida: no antes del año (sí en yogur o para cocinar).</li></ul></div>`;
+    <li>Leche de vaca como bebida: no antes del año (sí en yogur o para cocinar).</li>
+    <li>Pez espada, atún rojo, tiburón y lucio: nada hasta los 10 años (mercurio).</li>
+    <li>Frutos secos enteros: no antes de los 6 años; sí molidos o en crema.</li>
+    <li>Bacalao en salazón y embutidos: demasiada sal.</li></ul></div>`;
   $$("[data-food]").forEach(b=>b.onclick=()=>openFood(b.dataset.food));
   $$("[data-ok]").forEach(b=>b.onclick=()=>setFood(b.dataset.ok,"probado"));
   $("#addFood").onsubmit=async ev=>{ev.preventDefault();const n=$("#afN").value.trim();if(!n||!S.db)return;
